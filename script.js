@@ -1,5 +1,5 @@
-import navigation from "./js/navigation";
-import data from "./js/data";
+import navigation from "./js/navigation.js";
+import data from "./js/data.js";
 
 const container = document.querySelector('.player');
 const play = document.querySelectorAll('[data-video]');
