@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>audio-player</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Video player</h1>
+        <div class="player">
+            <div class="player-content">
+                <video src="media/test.mp4" data-id="1" poster="">
+                    some text here
+                </video>
+                <div class="play-btn shown play" data-video="">
+                    <img src="images/play-btn.svg" alt="button play" class="play-btn-icon shown" data-icon-video="play">
+                </div>
+                <div class="controls hidden">
+                    <div class="progress-wrapper">
+                        <input type="range" min="0" max="100" step="0.5" value="0" class="progress-bar" />
+                        <div class="progress-track"></div>
+                    </div>
+                    <button class="play" data-video="">
+                        <img src="images/play-button.svg" alt="play-button" class="icon shown" data-icon-video="play">
+                        <img src="images/pause-button.svg" alt="play-button" class="icon" data-icon-video="pause">
+                    </button>
+                    <div class="duration">
+                        <span data-video-timer></span>
+                        <span> / </span>
+                        <span data-video-duration></span>
+                    </div>
+                    <div class="volume">
+                        <button class="sound">
+                            <img src="images/speakers.svg" alt="play-button" class="icon shown" data-icon-sound="">
+                            <img src="images/speaker-mute.svg" alt="play-button" class="icon" data-icon-sound="">
+                        </button>
+                        <div class="volume-wrapper">
+                            <input type="range" min="0" max="1" step="0.1" value=".3" class="volume-bar" />
+                            <div class="volume-track"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 data-video-name=''></h2>
+
+        </div>
+        <section class="navigation">
+            <h2>Watch next</h2>
+            <div class="navigation-container">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__item">
+            <img src="images/github.svg" alt="github logo ">
+            <a href="https://github.com/kristalline" class="link" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+        <div class="footer__item ">
+            <span>2024</span>
+        </div>
+        <div class="footer__item ">
+            <a href="https://rs.school/courses/javascript-ru" class="link" target="_blank" rel="noopener noreferrer">
+                <img src="images/rs_school_js.svg " alt="rsschool logo">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>

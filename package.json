@@ -1,0 +1,19 @@
+{
+    "name": "audio-player",
+    "version": "1.0.0",
+    "type": "module",
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "license": "ISC",
+    "author": "",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite --host",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "vite": "^5.3.3"
+    }
+}
